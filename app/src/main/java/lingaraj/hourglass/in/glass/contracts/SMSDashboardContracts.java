@@ -8,6 +8,7 @@ public interface SMSDashboardContracts {
 
   public interface View extends BaseView {
 
+
     void noMessagesToDisplay();
 
     void setMessages(ArrayList<MessageDataModel> messages);
@@ -17,7 +18,7 @@ public interface SMSDashboardContracts {
 
 
     public interface SmsContentProviderAccessCallbacks {
-      void onComplete(@Nullable ArrayList<MessageDataModel> messages);
+      void onMessageRetrievalCompletion(@Nullable ArrayList<MessageDataModel> messages);
     }
 
   }

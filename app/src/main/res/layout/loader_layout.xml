@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<LinearLayout
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <ProgressBar
+      android:id="@+id/progressBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"/>
+
+  <ImageView
+      android:layout_gravity="center_horizontal"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:id="@+id/error_view"
+      app:srcCompat="@drawable/ic_sad"
+      />
+
+  <TextView
+      android:layout_gravity="center_horizontal"
+      android:textColor="@color/colorSecondaryText"
+      android:text="@string/error_permission_denied"
+      android:textSize="16sp"
+      android:id="@+id/error_mesage_view"
+      android:gravity="center_horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+
+  <android.support.v7.widget.AppCompatButton
+      android:layout_margin="4dp"
+      android:layout_gravity="center_horizontal"
+      android:id="@+id/retry"
+      android:textAllCaps="false"
+      android:text="@string/provide_permission"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</layout>

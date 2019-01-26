@@ -10,7 +10,7 @@ public class SMSDashBoardPresenter implements SMSDashboardContracts.Presenter,SM
 
   SMSDashboardContracts.View view;
   @Override
-  public void onComplete(@Nullable ArrayList<MessageDataModel> messages) {
+  public void onMessageRetrievalCompletion(@Nullable ArrayList<MessageDataModel> messages) {
       if (messages==null){
         view.showError();
       }

@@ -62,7 +62,7 @@ public class ReadMobileSMSAsyncTask extends AsyncTask<Void,Void,ArrayList<Messag
 
   @Override protected void onPostExecute(@Nullable ArrayList<MessageDataModel> messageDataModels) {
     super.onPostExecute(messageDataModels);
-      this.callbacks.onComplete(messageDataModels);
+      this.callbacks.onMessageRetrievalCompletion(messageDataModels);
 
   }
 
