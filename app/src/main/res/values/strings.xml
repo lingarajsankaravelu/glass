@@ -6,5 +6,8 @@
   <string name="provide_permission">Provide Permission</string>
   <string name="error_permission_denied">Please provide requested permisions to view all your SMS here.</string>
   <string name="common_loading_message">Getting your SMS</string>
+  <string name="error_retrieving_messages">Error getting  SMS from device</string>
+  <string name="no_messages">No messages to show</string>
+  <string name="dummy_category_sms">in last 1 hour</string>
 
 </resources>

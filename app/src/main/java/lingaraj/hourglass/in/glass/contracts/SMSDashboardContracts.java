@@ -6,16 +6,22 @@ import lingaraj.hourglass.in.glass.smshomescreen.MessageDataModel;
 
 public interface SMSDashboardContracts {
 
-  public interface View extends BaseView {
+  interface View  {
 
+    void showLoader();
+
+    void showError();
 
     void noMessagesToDisplay();
 
     void setMessages(ArrayList<MessageDataModel> messages);
+
+    void startFetchSMSAsyncTask(SMSDashboardContracts.Presenter.SmsContentProviderAccessCallbacks callbacks);
   }
 
   public interface Presenter {
 
+    void getMessages();
 
     public interface SmsContentProviderAccessCallbacks {
       void onMessageRetrievalCompletion(@Nullable ArrayList<MessageDataModel> messages);
