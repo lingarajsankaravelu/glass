@@ -120,11 +120,8 @@ public class SMSDashboardFragment extends Fragment implements SMSDashboardContra
   }
 
   @Override public void startFetchSMSAsyncTask(SMSDashboardContracts.Presenter.SmsContentProviderAccessCallbacks callbacks) {
-     if (read_sms_task==null){
-       read_sms_task = new ReadMobileSMSAsyncTask(callbacks,content_resolver);
+     read_sms_task = new ReadMobileSMSAsyncTask(callbacks,content_resolver).execute();
      }
-     read_sms_task.execute();
-  }
 
   @Override public void onClick(View v) {
     switch (v.getId()){

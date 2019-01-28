@@ -21,6 +21,10 @@ import lingaraj.hourglass.in.glass.smshomescreen.presenter.HomeActivityPresenter
 
 public class HomeActivity extends AppCompatActivity implements HomeContracts.View,View.OnClickListener,ActivityCompat.OnRequestPermissionsResultCallback {
 
+  public static class Keys {
+    public static final String Sender = "sendername";
+  }
+
   private final String TAG = "MAINACT";
   private ActivityMainBinding binding;
   @Inject HomeActivityPresenter presenter;
